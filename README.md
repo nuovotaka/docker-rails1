@@ -22,9 +22,14 @@ docker-compose run --rm web rails new . --force --database=mysql --skip-bundle
 
 ## Gemfileの変更
 
+バージョン情報を削除する
+```
+gem 'mysql2'
+```
+
 以下の行のコメントを外す
 ```
-gem 'therubyracer', platforms: :ruby
+gem 'mini_racer', platforms: :ruby
 ```
 Gemfileの変更を適用するためには以下のコマンドを実行
 ```
